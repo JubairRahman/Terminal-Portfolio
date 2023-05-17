@@ -70,7 +70,9 @@ function handleCommand(command) {
   
     let aboutBtn = document.getElementById('about-btn');
     aboutBtn.addEventListener('click', function() {
-      window.location.href = 'about.html';
+      // window.location.href = 'about.html';
+      window.open('about.html', '_blank');
+
     });
   }
   // echo part
@@ -174,7 +176,7 @@ phoneIcon.addEventListener('click', function(event) {
   swal({
     title: "Phone",
     text: "+8801645763353",
-    icon: "info",
+     icon: "info",
     button: "Close",
     closeOnClickOutside: false,
     closeOnEsc: false,
